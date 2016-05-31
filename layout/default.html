@@ -39,14 +39,6 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="index">Home</a>
-                <ul class="nav navbar-nav">
-                <li>
-                    <div xepan-component="xepan/base/Tool_UserPanel" layout="micro_login" class="xepan-component xepan-serverside-component" show_micro_login="true"></div>
-                </li>
-                <li>
-                    <div xepan-component="xepan/commerce/Tool_Cart" class="xepan-component xepan-serverside-component xepan-selected-component" id="8270969a-bb10-43d7-eeca-ae80f17fc730" checkout_page="checkout" show_name="true" show_qtyform="false" show_customfield="false" place_order_button_name="Place Order" image="yes" cart_detail_url="cart"></div>
-                </li>
-                </ul>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -59,26 +51,6 @@
                     </li>
                     <li>
                         <a href="contact">Contact</a>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portfolio <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="portfolio-1-col">1 Column Portfolio</a>
-                            </li>
-                            <li>
-                                <a href="portfolio-2-col">2 Column Portfolio</a>
-                            </li>
-                            <li>
-                                <a href="portfolio-3-col">3 Column Portfolio</a>
-                            </li>
-                            <li>
-                                <a href="portfolio-4-col">4 Column Portfolio</a>
-                            </li>
-                            <li>
-                                <a href="portfolio-item">Single Portfolio Item</a>
-                            </li>
-                        </ul>
                     </li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog <b class="caret"></b></a>
@@ -108,6 +80,13 @@
                             </li>
                         </ul>
                     </li>
+                    <li>
+                        <div xepan-component="xepan/base/Tool_UserPanel" layout="micro_login" class="xepan-component xepan-serverside-component" show_micro_login="true"></div>
+                    </li>
+                    <li>
+                        <br>
+                        <div xepan-component="xepan/commerce/Tool_Cart" class="xepan-component xepan-serverside-component xepan-selected-component" id="8270969a-bb10-43d7-eeca-ae80f17fc730" checkout_page="checkout" show_name="true" show_qtyform="false" show_customfield="false" place_order_button_name="Place Order" image="yes" cart_detail_url="cart"></div>
+                    </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -122,26 +101,33 @@
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
             <li data-target="#myCarousel" data-slide-to="1"></li>
             <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
         </ol>
 
         <!-- Wrapper for slides -->
         <div class="carousel-inner">
             <div class="item active">
-                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide One');"></div>
+                <div class="fill" style="background-image:url('images/slider3.jpg');"></div>
                 <div class="carousel-caption">
-                    <h2>Caption 1</h2>
+                    <h2>Printing World</h2>
                 </div>
             </div>
             <div class="item">
-                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Two');"></div>
+                <div class="fill" style="background-image:url('images/slider1.jpg');"></div>
                 <div class="carousel-caption">
-                    <h2>Caption 2</h2>
+                    <h2>Printing World</h2>
                 </div>
             </div>
             <div class="item">
-                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Three');"></div>
+                <div class="fill" style="background-image:url('images/main-slider-print.jpg');"></div>
                 <div class="carousel-caption">
-                    <h2>Caption 3</h2>
+                    <h2>Printing World</h2>
+                </div>
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('images/slider7-1080x400.jpg');"></div>
+                <div class="carousel-caption">
+                    <h2>Printing World</h2>
                 </div>
             </div>
         </div>
@@ -161,7 +147,15 @@
     {$Content}
     </div>
 
-
+    <div class="row">
+        <div class="col-lg-12">
+        <hr>
+        <!-- Footer -->
+        <footer>
+            <p class="text-center"> Copyright © Your Website 2016</p>
+        </footer>
+        </div>
+    </div>
 
     <script type="text/javascript">
       $('body').on('beforeSave',function(event, ui){
